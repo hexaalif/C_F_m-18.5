@@ -2,15 +2,17 @@
 
 void pnt(int n)
 {
-    if (n)
-    {
-        pnt(n - 1);
-    }
-    else
+    if (n < 1)
     {
         return;
     }
-    printf("%d\n", n);
+
+    printf("%d", n);
+    if (n > 1)
+    {
+        printf(" ");
+    }
+    pnt(n - 1);
 }
 
 int main()

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int sum(int a[], int n, int i)
+long long sum(int a[], int n, int i)
 {
     if (i == n)
     {

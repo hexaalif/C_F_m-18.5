@@ -6,11 +6,12 @@ void f(int a[], int n, int i)
     {
         return;
     }
-    f(a, n, i + 1);
-    if (i % 2 == 0)
+    int s = 0;
+    for (int i = 0; i < n; i++)
     {
-        printf("%d ", a[i]);
+        s = s + a[i];
     }
+    printf("%d", s);
 }
 
 int main()

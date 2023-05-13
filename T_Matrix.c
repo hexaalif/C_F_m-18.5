@@ -52,11 +52,3 @@ int main()
     printf("%lld\n", sum);
     return 0;
 }
-// if (flag == 1)
-// {
-//     printf("primary");
-// }
-// else
-// {
-//     printf("not");
-// }

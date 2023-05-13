@@ -31,18 +31,25 @@ int main()
                 sum1 = sum1 + a[i][j];
                 continue;
             }
-            else if (i + j == row - 1)
-            {
-                sum2 = sum2 + a[i][j];
-            }
+
             // if (a[i][j] != 0)
             // {
             //     flag = 0;
             // }
         }
     }
-    sum = abs(sum1) + abs(sum2);
-    printf("%lld\n", sum * 1);
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < row; j++)
+        {
+            if (i + j == row - 1)
+            {
+                sum2 = sum2 + a[i][j];
+            }
+        }
+    }
+    sum = abs(sum1 - sum2);
+    printf("%lld\n", sum);
     return 0;
 }
 // if (flag == 1)
